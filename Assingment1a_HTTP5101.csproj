@@ -125,7 +125,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="index_WebForm.aspx" />
+    <Content Include="index_WebForm_HTML_Controls.html" />
     <Content Include="index_WebForm_Server_Controls.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -187,13 +187,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="index_WebForm.aspx.cs">
-      <DependentUpon>index_WebForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="index_WebForm.aspx.designer.cs">
-      <DependentUpon>index_WebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="index_WebForm_Server_Controls.aspx.cs">
       <DependentUpon>index_WebForm_Server_Controls.aspx</DependentUpon>

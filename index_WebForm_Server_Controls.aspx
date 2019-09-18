@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body>
+    <h1>Harpreet's Skydiving!</h1>
     <form id="form1" runat="server" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
         <div>
              <div>
@@ -27,7 +28,9 @@
             </div>
             <div>
                 <asp:Label runat="server">Date Of Birth:</asp:Label>
-                <asp:TextBox runat="server" ID="client_date_of_birth"></asp:TextBox>
+                <asp:TextBox runat="server" ID="client_date_of_birth_month" style="width:10%"></asp:TextBox>
+                <asp:TextBox runat="server" ID="client_date_of_birth_day" style="width:10%"></asp:TextBox>
+                <asp:TextBox runat="server" ID="client_date_of_birth_year" style="width:10%"></asp:TextBox>
             </div>
             <div>
                 <asp:Label runat="server">Experience:</asp:Label>

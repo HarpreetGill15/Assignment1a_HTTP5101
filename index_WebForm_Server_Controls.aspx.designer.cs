@@ -58,13 +58,31 @@ namespace Assingment1a_HTTP5101 {
         protected global::System.Web.UI.WebControls.TextBox client_phone_number;
         
         /// <summary>
-        /// client_date_of_birth control.
+        /// client_date_of_birth_month control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox client_date_of_birth;
+        protected global::System.Web.UI.WebControls.TextBox client_date_of_birth_month;
+        
+        /// <summary>
+        /// client_date_of_birth_day control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox client_date_of_birth_day;
+        
+        /// <summary>
+        /// client_date_of_birth_year control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox client_date_of_birth_year;
         
         /// <summary>
         /// client_experience control.
