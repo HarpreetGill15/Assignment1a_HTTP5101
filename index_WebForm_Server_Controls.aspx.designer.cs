@@ -94,6 +94,15 @@ namespace Assingment1a_HTTP5101 {
         protected global::System.Web.UI.WebControls.RadioButtonList client_experience;
         
         /// <summary>
+        /// client_jump_type control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList client_jump_type;
+        
+        /// <summary>
         /// client_jumpers control.
         /// </summary>
         /// <remarks>
@@ -101,5 +110,32 @@ namespace Assingment1a_HTTP5101 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList client_jumpers;
+        
+        /// <summary>
+        /// client_record_me control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList client_record_me;
+        
+        /// <summary>
+        /// client_mailing control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList client_mailing;
+        
+        /// <summary>
+        /// confirmbox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmbox;
     }
 }

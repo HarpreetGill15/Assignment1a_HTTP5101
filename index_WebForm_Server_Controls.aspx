@@ -8,34 +8,50 @@
 </head>
 <body>
     <h1>Harpreet's Skydiving!</h1>
-    <form id="form1" runat="server" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
+    <form id="form1" runat="server">
         <div>
              <div>
                  <asp:Label runat="server">First Name:</asp:Label>
                  <asp:TextBox runat="server" ID="client_first_name"></asp:TextBox>
+                 <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter a First name!" ForeColor="Red" ControlToValidate="client_first_name" ></asp:RequiredFieldValidator>
             </div>
             <div>
                 <asp:Label runat="server">Last Name:</asp:Label>
                 <asp:TextBox runat="server" ID="client_last_name"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter a Last name!" ForeColor="Red" ControlToValidate="client_last_name" ></asp:RequiredFieldValidator>
             </div>
             <div>
                 <asp:Label runat="server">Email:</asp:Label>
                 <asp:TextBox runat="server" ID="client_email"></asp:TextBox>
+                <!-- Expression taken from visual studios -->
+                <asp:RegularExpressionValidator runat="server" EnableClientScript="true"  ErrorMessage="Please enter a valid Email!" ForeColor="Red" ControlToValidate="client_email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
             <div>
                 <asp:Label runat="server">Phone Number:</asp:Label>
                 <asp:TextBox runat="server" ID="client_phone_number"></asp:TextBox>
+                <asp:RegularExpressionValidator runat="server" EnableClientScript="true"  ErrorMessage="Please enter a valid phone number!" ForeColor="Red" ControlToValidate="client_phone_number" ValidationExpression="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}"></asp:RegularExpressionValidator>
             </div>
             <div>
                 <asp:Label runat="server">Date Of Birth:</asp:Label>
                 <asp:TextBox runat="server" ID="client_date_of_birth_month" style="width:10%"></asp:TextBox>
+                <asp:RangeValidator runat="server" EnableClientScript="true"  ErrorMessage="Please enter a valid month" ForeColor="Red" ControlToValidate="client_date_of_birth_month" MaximumValue="12" MinimumValue="1"></asp:RangeValidator>
                 <asp:TextBox runat="server" ID="client_date_of_birth_day" style="width:10%"></asp:TextBox>
+                <asp:RangeValidator runat="server" EnableClientScript="true"  ErrorMessage="Please enter a valid day" ForeColor="Red" ControlToValidate="client_date_of_birth_day" MaximumValue="31" MinimumValue="1"></asp:RangeValidator>
                 <asp:TextBox runat="server" ID="client_date_of_birth_year" style="width:10%"></asp:TextBox>
+                <asp:RangeValidator runat="server" EnableClientScript="true"  ErrorMessage="Please enter a valid year (Must be 16 years of age)" ForeColor="Red" ControlToValidate="client_date_of_birth_day" MaximumValue="2013" MinimumValue="1869"></asp:RangeValidator>
             </div>
             <div>
                 <asp:Label runat="server">Experience:</asp:Label>
                 <asp:RadioButtonList runat="server" ID="client_experience">
                     <asp:ListItem Text="None" Value="None"></asp:ListItem>
+                    <asp:ListItem Text="Some Experience" Value="Some Experience"></asp:ListItem>
+                    <asp:ListItem Text="Veteran at Skydiving" Value="Veteran"></asp:ListItem>
+                </asp:RadioButtonList>
+            </div>
+            <div>
+                <asp:Label runat="server">Jump Type:</asp:Label>
+                <asp:RadioButtonList runat="server" ID="client_jump_type">
+                    <asp:ListItem Text="10,500 feet (40 seconds of freefall)" Value="standard"></asp:ListItem>
                     <asp:ListItem Text="Some Experience" Value="Some Experience"></asp:ListItem>
                     <asp:ListItem Text="Veteran at Skydiving" Value="Veteran"></asp:ListItem>
                 </asp:RadioButtonList>
@@ -52,12 +68,15 @@
               </asp:DropDownList>
            </div>
             <div>
-                <asp:CheckBoxList runat="server">
-                    <asp:ListItem Text="I would like for my five to be recored!" Value="Yes_Record"></asp:ListItem>
+                <asp:CheckBoxList runat="server" ID="client_record_me">
+                    <asp:ListItem Text="I would like for my jump to be recored!" Value="Yes_Record"></asp:ListItem>
                 </asp:CheckBoxList>
-                <asp:CheckBoxList runat="server">
+                <asp:CheckBoxList runat="server" ID="client_mailing">
                     <asp:ListItem Text="Add me to the mailing list for promotions!" Value="Yes_Mailing"></asp:ListItem>
                 </asp:CheckBoxList>
+            </div>
+            <div id="confirmbox" runat="server">
+
             </div>
             <asp:Button runat="server" Text="Submit"/>
         </div>
